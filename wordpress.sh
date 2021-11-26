@@ -1,7 +1,7 @@
 #! /bin/bash
 wp_package(){
 amazon-linux-extras enable php7.4
-yum install php php-common php-pear
+yum install php php-common php-pear -y
 pkgs="httpd mariadb mariadb-server php-gd php-{cgi,curl,mbstring,gd,mysqlnd,gettext,json,xml,fpm,intl,zip}"
 for i in $pkgs;
 do
