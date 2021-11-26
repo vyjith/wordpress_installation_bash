@@ -25,7 +25,7 @@ read count
 for (( i=1; i<=$count; i++ ))
 do
 echo ""
-echo -n "Please enter the domain name you wish to use: "
+echo -n "Please enter the $i domain name you wish to use: "
 read domain
 echo ""
 echo  "Please enter the database name you wish to use: "
@@ -35,7 +35,7 @@ echo -n "Please enter the username you wish to use: "
 read user
 echo ""
 echo -n "Please enter the password name you wish to use: "
-read -s "NOTE: The passsword will be hidden: " passwd
+read passwd
 
 
 ## Mysql database creating section here
@@ -71,15 +71,31 @@ ServerName $domain
 ServerAlias $domain
 </VirtualHost>
 EOF
+wp_information
 done
 w_restart
 }
 w_restart(){
 service httpd restart
+rm -rf latest.tar.gz wordpress
+}
+wp_information(){
+echo "Please check the following information about your wordpress site"
+echo ""
+echo "The $i domain is $domain and the wordpress admin is http://$domain/wp-admin"
+echo ""
+echo "The databse you have entered was $db"
+echo ""
+echo "The database username you have entered was $user"
+echo ""
+echo "The password you have entered was $passwd"
+echo ""
+echo "Thank you for using myscript and enjoy : ) "
 }
 w_main(){
         wp_package
 }
 w_main
 exit
+
 ```
