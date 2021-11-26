@@ -1,3 +1,4 @@
+```sh
 #! /bin/bash
 wp_package(){
 amazon-linux-extras enable php7.4
@@ -81,3 +82,4 @@ w_main(){
 }
 w_main
 exit
+```
