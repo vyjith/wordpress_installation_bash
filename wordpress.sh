@@ -70,9 +70,9 @@ ServerName $domain
 ServerAlias $domain
 </VirtualHost>
 EOF
+w_restart
 wp_information
 done
-w_restart
 }
 w_restart(){
 service httpd restart
@@ -83,13 +83,8 @@ echo "Please check the following information about your wordpress site"
 echo ""
 echo "The $i domain is $domain and the wordpress admin is http://$domain/wp-admin"
 echo ""
-echo "The databse you have entered was $db"
-echo ""
-echo "The database username you have entered was $user"
-echo ""
-echo "The password you have entered was $passwd"
-echo ""
 echo "Thank you for using myscript and enjoy : ) "
+echo ""
 }
 w_main(){
         wp_package
