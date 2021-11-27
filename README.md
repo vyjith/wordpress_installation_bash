@@ -6,6 +6,9 @@
 
 It is a simple bash script for creating multiple website on bareshell. If you are looking for installing multiple wordpress site on a single instance, if yes, then this script should be very helpful for you. Please check the following details about the script.
 
+## Soruce code details is the following
+-------------------------------------------------- 
+
 ```sh
 #! /bin/bash
 wp_package(){
