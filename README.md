@@ -6,6 +6,35 @@
 
 It is a simple bash script for creating multiple website on bareshell. If you are looking for installing multiple wordpress site on a single instance, if yes, then this script should be very helpful for you. Please check the following details about the script.
 
+## Pre-Requestes (Package installation) 
+-------------------------------------------------- 
+
+```sh
+
+sudo yum -y install git 
+
+```
+## How to use this script
+-------------------------------------------------- 
+```sh
+git clone https://github.com/vyjith/wordpress_installation/
+
+cd wordpress_installation
+
+chmod +x wordpress.sh
+```
+
+## Script running
+-------------------------------------------------- 
+
+Please run this script as root user
+
+```sh
+
+bash wordpress.sh
+
+```
+
 ## Soruce code details is the following
 -------------------------------------------------- 
 
