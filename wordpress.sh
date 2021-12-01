@@ -1,4 +1,18 @@
 #! /bin/bash
+w_root(){
+if [ "$EUID" == 0 ];
+then
+        wp_package
+else
+
+        echo ""
+        echo "Please run this command as root user. If you want to switch the root user, if yes, please enter sudo su - on the terminal"
+        echo ""
+        echo "I am exiting from here now. Thank you!"
+        echo ""
+        exit 1
+fi
+}
 wp_package(){
 amazon-linux-extras enable php7.4
 yum install php php-common php-pear -y
@@ -87,7 +101,7 @@ echo "Thank you for using myscript and enjoy : ) "
 echo ""
 }
 w_main(){
-        wp_package
+        w_root
 }
 w_main
 exit
