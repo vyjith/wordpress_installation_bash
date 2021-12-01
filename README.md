@@ -19,7 +19,7 @@ sudo yum -y install git
 ## How to use this script
 -------------------------------------------------- 
 ```sh
-git clone https://github.com/vyjith/wordpress_installation/
+git clone https://github.com/vyjith/wordpress_installation_bash/
 
 cd wordpress_installation
 
