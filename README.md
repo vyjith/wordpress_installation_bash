@@ -21,7 +21,7 @@ sudo yum -y install git
 ```sh
 git clone https://github.com/vyjith/wordpress_installation_bash/
 
-cd wordpress_installation
+cd wordpress_installation_bash
 
 chmod +x wordpress.sh
 ```
